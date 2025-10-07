@@ -1,7 +1,7 @@
 import React from 'react';
 import { Clock} from 'lucide-react';
 
-export default function CoworkingSpace() {
+export default function Services() {
   return (
     <div className=" bg-black text-white">
       {/* Header */}
