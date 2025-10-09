@@ -72,7 +72,7 @@ export default function Dashboard() {
             }}
           />
         ))}
- <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/70"></div>
+     <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/70"></div>
 
 
         
@@ -104,7 +104,7 @@ export default function Dashboard() {
           <div className="flex flex-wrap gap-4">
             <button 
               onClick={() => window.open("https://wa.me/923214448958", "_blank")}
-              className="flex items-center gap-2 border-2 border-yellow-400 text-yellow-400 px-8 py-3 rounded hover:bg-yellow-400 hover:text-black transition-all font-semibold"
+              className="flex items-center gap-2 border-2 border-yellow-400 text-yellow-400 px-8 py-3 rounded hover:bg-yellow-500 hover:text-black transition-all font-semibold"
             >
               <FaWhatsapp size={20} />
               WhatsApp Us
@@ -167,7 +167,7 @@ export default function Dashboard() {
 
       {/* Floating Buttons */}
       <div className="fixed bottom-8 left-8 z-20">
-        <button className="bg-yellow-400 text-black p-4 rounded-full shadow-2xl hover:scale-110 transition-transform">
+        <button className="bg-yellow-500 text-black p-4 rounded-full shadow-2xl hover:scale-110 transition-transform">
           <Phone size={24} />
         </button>
       </div>

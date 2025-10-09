@@ -16,7 +16,7 @@ export default function GulburgBanner() {
         {/* Main content */}
         <div className="mt-8 md:mt-12 lg:mt-16">
           <div className="overflow-hidden">
-            <h1 className="animate-scroll-slow whitespace-nowrap text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-yellow-400 tracking-tight">
+            <h1 className="animate-scroll-slow whitespace-nowrap text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-yellow-500 tracking-tight">
               <span className="inline-block px-4" style={{ WebkitTextStroke: '2px #000', textStroke: '2px #000', paintOrder: 'stroke fill' }}>
                 High Speed Internet_
               </span>
@@ -30,7 +30,7 @@ export default function GulburgBanner() {
                 24 Hours Access_ 
               </span>
                <span className="inline-block px-4" style={{ WebkitTextStroke: '2px #000', textStroke: '2px #000', paintOrder: 'stroke fill' }}>
-                Unlimited Tea & Coffee_ 
+                Tea & Coffee
               </span>
             </h1>
           </div>

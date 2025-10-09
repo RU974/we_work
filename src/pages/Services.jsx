@@ -9,7 +9,7 @@ export default function Services() {
         <div className="bg-yellow-400 text-black px-6 py-3 rounded-full font-bold text-sm md:text-base">
           THE PERFECT PLACE TO WORK AND COLLABORATE
         </div>
-        <button className="border-2 border-yellow-400 text-yellow-400 px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 hover:text-black transition-all duration-300">
+        <button className="border-2 border-yellow-400 text-yellow-500 px-6 py-2 rounded-full font-semibold hover:bg-yellow-400 hover:text-black transition-all duration-300">
           VIEW ALL SERVICES
         </button>
       </header>
@@ -18,10 +18,10 @@ export default function Services() {
       <section className="container mx-auto px-4 py-16 text-center">
         <div className="flex items-center justify-center gap-4 mb-8">
           <h1 className="text-6xl md:text-8xl font-bold">
-            OPEN <span className="text-yellow-400">24</span> HOURS
+            OPEN <span className="text-yellow-500">24</span> HOURS
           </h1>
           <div className="w-16 h-16 bg-gray-700 rounded-full flex items-center justify-center">
-            <Clock className="w-8 h-8 text-yellow-400" />
+            <Clock className="w-8 h-8 text-yellow-500" />
           </div>
         </div>
         <p className="text-xl md:text-2xl text-gray-300 mb-16">
@@ -39,7 +39,7 @@ export default function Services() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/80 backdrop-blur-sm p-4">
-                <h3 className="text-xl font-bold text-center">Private Office</h3>
+                <h3 className="text-xl font-bold text-center">Private Offices</h3>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function Services() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/80 backdrop-blur-sm p-4">
-                <h3 className="text-xl font-bold text-center">Open Spaces</h3>
+                <h3 className="text-xl font-bold text-center">Meeting Room </h3>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ export default function Services() {
                 className="w-full h-full object-cover"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/80 backdrop-blur-sm p-4">
-                <h3 className="text-xl font-bold text-center">Shared Space</h3>
+                <h3 className="text-xl font-bold text-center">Flexible Rooms</h3>
               </div>
             </div>
           </div>
