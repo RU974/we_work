@@ -6,6 +6,8 @@ import Splash from "./components/Splash";
 import Services from "./pages/Services";
 import CoworkingServices from "./pages/CoworkingServices";
 import GulbergBanner from "./pages/GulbergBanner";
+import CoreServices from "./pages/CoreServices";
+
 function App() {
   const [loading, setLoading] = useState(true);
 
@@ -20,6 +22,7 @@ function App() {
           <Services/>
           <CoworkingServices/>
           <GulbergBanner/>
+          <CoreServices/>
         </>
       )}
     </>

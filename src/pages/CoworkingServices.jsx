@@ -48,22 +48,22 @@ export default function CoworkingServices() {
     {
       icon: <Coffee className="w-12 h-12 mb-4" />,
       title: "Tea & Coffee",
-      description: "At Space99 Co-working, we offer unlimited tea and coffee because we understand how important it is to keep yourself energized."
+      description: "At WeWork Co-working, we offer unlimited tea and coffee because we understand how important it is to keep yourself energized."
     },
     {
       icon: <Users className="w-12 h-12 mb-4" />,
       title: "Fully staffed reception",
-      description: "At Space99 Co-working, we offer a fully staffed reception 24 hours a day, always ready to help you with whatever you need."
+      description: "At WeWork Co-working, we offer a fully staffed reception 24 hours a day, always ready to help you with whatever you need."
     },
     {
       icon: <Printer className="w-12 h-12 mb-4" />,
       title: "Printing & Scanning",
-      description: "At Space99 Co-working, we offer printing and scanning services to make it easier for you and your team to work."
+      description: "At WeWork Co-working, we offer printing and scanning services to make it easier for you and your team to work."
     },
     {
       icon: <Zap className="w-12 h-12 mb-4" />,
       title: "Power Backup",
-      description: "With three backup systems (solar, UPS and generator) Space99 Co-working ensures no interruption in services and 24 hours open facility."
+      description: "With three backup systems (solar, UPS and generator) WeWork Co-working ensures no interruption in services and 24 hours open facility."
     },
     {
       icon: <Network className="w-12 h-12 mb-4" />,
@@ -73,7 +73,7 @@ export default function CoworkingServices() {
     {
       icon: <Armchair className="w-12 h-12 mb-4" />,
       title: "Dedicated Desk",
-      description: "At Space99 Co-working, we offer dedicated space with the best quality furniture to keep you productive all day."
+      description: "At WeWork Co-working, we offer dedicated space with the best quality furniture to keep you productive all day."
     },
     {
       icon: <ParkingCircle className="w-12 h-12 mb-4" />,
@@ -83,7 +83,7 @@ export default function CoworkingServices() {
     {
       icon: <Lock className="w-12 h-12 mb-4" />,
       title: "Lockers",
-      description: "At Space99 Co-working, we provide personal lockers to keep your precious belongings safe and secure."
+      description: "At WeWork Co-working, we provide personal lockers to keep your precious belongings safe and secure."
     }
   ];
 
