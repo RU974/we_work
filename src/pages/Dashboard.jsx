@@ -87,7 +87,7 @@ export default function Dashboard() {
        <div className="mb-6 text-gray-300">
   <p className="text-2xl font-roboto text-white font-bold ">
     Welcome to 
-    <span className="text-yellow-400"> We Work</span>
+    <span className="text-yellow-500"> We Work</span>
   </p>
   <p className="text-xl mt-2 font-roboto text-white font-bold">
     Co Working Space Johar Town Lahore
@@ -96,7 +96,7 @@ export default function Dashboard() {
 
 
           <h1 className="text-5xl text-white md:text-7xl lg:text-8xl font-bold mb-10 leading-tight">
-            Your <span className="text-yellow-400">Gateway</span>
+            Your <span className="text-yellow-500">Gateway</span>
             <br />
             to Productivity!
           </h1>
@@ -104,7 +104,7 @@ export default function Dashboard() {
           <div className="flex flex-wrap gap-4">
             <button 
               onClick={() => window.open("https://wa.me/923214448958", "_blank")}
-              className="flex items-center gap-2 border-2 border-yellow-400 text-yellow-400 px-8 py-3 rounded hover:bg-yellow-500 hover:text-black transition-all font-semibold"
+              className="flex items-center gap-2 border-2 border-yellow-400 text-yellow-500 px-8 py-3 rounded hover:bg-yellow-500 hover:text-black transition-all font-semibold"
             >
               <FaWhatsapp size={20} />
               WhatsApp Us

@@ -1,14 +1,39 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Check } from 'lucide-react';
+import CountUp from 'react-countup';
 
 export default function Space99Landing() {
   const [offset, setOffset] = useState(0);
+  const [visibleStats, setVisibleStats] = useState(false);
+  const statsRef = useRef(null);
 
   useEffect(() => {
     const interval = setInterval(() => {
       setOffset(prev => prev + 1);
     }, 50);
-    return () => clearInterval(interval);
+
+    // Stats observer
+    const currentStatsRef = statsRef.current;
+    let statsObserver;
+    
+    if (currentStatsRef) {
+      statsObserver = new IntersectionObserver(
+        ([entry]) => {
+          if (entry.isIntersecting) {
+            setVisibleStats(true);
+          }
+        },
+        { threshold: 0.2 }
+      );
+      statsObserver.observe(currentStatsRef);
+    }
+
+    return () => {
+      clearInterval(interval);
+      if (statsObserver && currentStatsRef) {
+        statsObserver.disconnect();
+      }
+    };
   }, []);
 
   // Image columns with placeholder images
@@ -21,7 +46,7 @@ export default function Space99Landing() {
 
   const column2Images = [
     'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1525268771113-32d9e9021a97?w=400&h=300&fit=crop',
+    'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=300&fit=crop',
     'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop',
     'https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop'
   ];
@@ -44,6 +69,12 @@ export default function Space99Landing() {
     { text: 'Parking', col: 2 }
   ];
 
+  const stats = [
+    { number: 4, label: ["YEARS OF", "EXPERIENCE"] },
+    { number: 15, label: ["ROOMS"], suffix: "+" },
+    { number: 24, label: ["SERVICE", "AVAILABLE"], suffix: "h" },
+  ];
+
   return (
     <div className="min-h-screen bg-black text-white overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
@@ -52,7 +83,7 @@ export default function Space99Landing() {
           <div className="flex flex-col justify-center space-y-8 lg:pr-8">
             <div>
               <p className="text-gray-400 text-sm mb-2 uppercase tracking-wider">Who we are</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-400 mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-500 mb-6 leading-tight">
                 Welcome to We Work
               </h1>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
@@ -66,7 +97,7 @@ export default function Space99Landing() {
               <div className="space-y-3">
                 {amenities.slice(0, 4).map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                     <span className="text-gray-300 text-sm md:text-base">{item.text}</span>
                   </div>
                 ))}
@@ -74,7 +105,7 @@ export default function Space99Landing() {
               <div className="space-y-3">
                 {amenities.slice(4, 8).map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-yellow-400 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
                     <span className="text-gray-300 text-sm md:text-base">{item.text}</span>
                   </div>
                 ))}
@@ -84,20 +115,20 @@ export default function Space99Landing() {
             {/* Operational Days */}
             <div className="pt-4">
               <h3 className="text-xl md:text-2xl font-semibold">
-                Operational days : <span className="text-yellow-400">Mon – Sat</span>
+                Operational days : <span className="text-yellow-500">Mon – Sat</span>
               </h3>
             </div>
           </div>
 
           {/* Right Image Gallery Section */}
-          <div className="hidden lg:grid grid-cols-3 gap-4 h-[600px] overflow-hidden">
+          <div className="hidden lg:grid grid-cols-3 gap-10 h-[600px] overflow-hidden">
             {/* Column 1 - Moves Up */}
             <div 
               className="flex flex-col gap-4"
               style={{ transform: `translateY(-${offset % 500}px)` }}
             >
               {[...column1Images, ...column1Images].map((img, idx) => (
-                <div key={idx} className="relative rounded-lg overflow-hidden flex-shrink-0 h-48">
+                <div key={idx} className="relative rounded-lg overflow-hidden flex-shrink-0 h-58">
                   <img 
                     src={img} 
                     alt={`Space 99 interior ${idx + 1}`}
@@ -113,7 +144,7 @@ export default function Space99Landing() {
               style={{ transform: `translateY(${offset % 500}px)` }}
             >
               {[...column2Images, ...column2Images].map((img, idx) => (
-                <div key={idx} className="relative rounded-lg overflow-hidden flex-shrink-0 h-48">
+                <div key={idx} className="relative rounded-lg overflow-hidden flex-shrink-0 h-58">
                   <img 
                     src={img} 
                     alt={`Space 99 workspace ${idx + 1}`}
@@ -129,7 +160,7 @@ export default function Space99Landing() {
               style={{ transform: `translateY(-${offset % 500}px)` }}
             >
               {[...column3Images, ...column3Images].map((img, idx) => (
-                <div key={idx} className="relative rounded-lg overflow-hidden flex-shrink-0 h-48">
+                <div key={idx} className="relative rounded-lg overflow-hidden flex-shrink-0 h-58">
                   <img 
                     src={img} 
                     alt={`Space 99 meeting room ${idx + 1}`}
@@ -153,8 +184,48 @@ export default function Space99Landing() {
             ))}
           </div>
         </div>
+
+        {/* Stats Section */}
+        <div ref={statsRef} className="mt-10 md:mt-20 pt-12 pb-12 flex justify-center">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 lg:gap-20">
+            {stats.map((stat, index) => (
+              <div
+                key={index}
+                className={`flex flex-col md:flex-row items-center md:items-center gap-4 transition-all duration-700 ${
+                  visibleStats
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-10"
+                }`}
+                style={{ transitionDelay: `${index * 100}ms` }}
+              >
+                <div
+                  className="text-6xl md:text-7xl lg:text-8xl font-bold text-transparent"
+                  style={{
+                    WebkitTextStroke: "2px #ffffff",
+                    textStroke: "2px #ffffff",
+                  }}
+                >
+                  {visibleStats ? (
+                    <CountUp
+                      start={0}
+                      end={stat.number}
+                      duration={2}
+                      suffix={stat.suffix || ""}
+                    />
+                  ) : (
+                    0
+                  )}
+                </div>
+                <div className="text-sm md:text-base font-bold leading-tight text-center md:text-left">
+                  {stat.label.map((line, i) => (
+                    <div key={i}>{line}</div>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
-      
     </div>
   );
 }

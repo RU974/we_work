@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom"; // ✅ Import Routes
+import { useState, useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom"; 
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Dashboard from "./pages/Dashboard";
@@ -12,10 +12,19 @@ import TestimonialsCarousel from "./pages/TestimonialsCarousel";
 import CoworkingFAQ from "./pages/CoworkingFAQ";
 import AboutSection from "./pages/about/AboutSection";
 import AboutImages from "./pages/about/AboutImages";
+import ServicesSection from "./pages/services/ServicesSection";
+import ServicesOffer from "./pages/services/ServicesOffer";
+import ServicesBanner from "./pages/services/ServicesBanner";
 import Footer from "./components/Footer";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const location = useLocation(); // ✅ detect route change
+
+  useEffect(() => {
+    // Show splash screen whenever route changes
+    setLoading(true);
+  }, [location]);
 
   if (loading) {
     return <Splash onFinish={() => setLoading(false)} />;
@@ -41,17 +50,27 @@ function App() {
           }
         />
 
-        {/* Example separate routes if needed */}
+        {/* About Page */}
         <Route path="/about" element={
           <>
-         
-       <AboutSection/>
-       <AboutImages/>
-       <TestimonialsCarousel/>
-         
+            <AboutSection/>
+            <AboutImages/>
+            <TestimonialsCarousel/>
           </>
-          } />
-        <Route path="/contact" element={<CoworkingFAQ />} />
+        } />
+
+        {/* Services Page */}
+        <Route path="/services" element={
+          <>
+            <ServicesSection />
+            <ServicesOffer/>
+            <ServicesBanner/>
+            <CoworkingServices />
+            <CoworkingFAQ />
+          </>
+        } />
+
+        {/* Pricing Page */}
         <Route path="/pricing" element={<GulbergBanner />} />
       </Routes>
 

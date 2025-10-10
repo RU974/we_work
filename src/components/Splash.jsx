@@ -10,11 +10,11 @@ export default function Splash({ onFinish }) {
         if (old >= 100) {
           clearInterval(interval);
           onFinish(); // hide splash after 100%
-          return 100;
+          return 80;
         }
         return old + 2; // increase 2% per tick
       });
-    }, 10);
+    }, 100);
 
     return () => clearInterval(interval);
   }, [onFinish]);
