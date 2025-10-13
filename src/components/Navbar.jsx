@@ -24,7 +24,7 @@ export default function Navbar() {
           <Link to="/about" className="hover:text-yellow-500 transition-colors duration-300">About Us</Link>
           <Link to="/services" className="hover:text-yellow-500 transition-colors duration-300">Services</Link>
           <Link to="/contact" className="hover:text-yellow-500 transition-colors duration-300">Contact Us</Link>
-          <Link to="/pricing" className="hover:text-yellow-500 transition-colors duration-300">Pricing</Link>
+          
         </div>
 
         {/* Right Side (Buttons + Mobile Toggle) */}

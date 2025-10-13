@@ -15,6 +15,9 @@ import AboutImages from "./pages/about/AboutImages";
 import ServicesSection from "./pages/services/ServicesSection";
 import ServicesOffer from "./pages/services/ServicesOffer";
 import ServicesBanner from "./pages/services/ServicesBanner";
+import ContactUsSection from "./pages/contact/ContactUsSection";
+import ContactSection from "./pages/contact/contactSection";
+import LocationSection from "./pages/contact/LocationSection";
 import Footer from "./components/Footer";
 
 function App() {
@@ -71,7 +74,13 @@ function App() {
         } />
 
         {/* Pricing Page */}
-        <Route path="/pricing" element={<GulbergBanner />} />
+        <Route path="/contact" element={
+          <>
+          <ContactUsSection />
+          <ContactSection/>
+          <LocationSection/>
+          </>
+          } />
       </Routes>
 
       <Footer />
