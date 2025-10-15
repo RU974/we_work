@@ -76,7 +76,7 @@ export default function Space99Landing() {
   ];
 
   return (
-    <div className="min-h-screen bg-black text-white overflow-hidden">
+    <div className="min-h-screen mt-50 bg-black text-white overflow-hidden">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 py-12 lg:py-20">
           {/* Left Content Section */}

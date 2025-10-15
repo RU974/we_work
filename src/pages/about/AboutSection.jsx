@@ -49,7 +49,7 @@ export default function AboutSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
+      <div className="relative  z-10 container mx-auto px-8 py-12 lg:py-20">
         {/* Top Text */}
         <p className="text-white text-lg md:text-xl mb-8 text-center">
           Your Gateway to Productivity!

@@ -18,7 +18,7 @@ export default function LocationSection() {
       </div>
 
       {/* Centered Map Section */}
-      <div className="flex justify-center items-center py-12 px-4">
+      <div className="flex justify-center items-center py-12 px-4 ">
         <div className="relative w-full md:w-4/5 lg:w-3/4 xl:w-2/3 h-[450px] rounded-2xl overflow-hidden border-4 border-yellow-500 shadow-2xl group">
           {!isMapLoaded && (
             <div className="absolute inset-0 bg-gray-900 flex items-center justify-center z-10">
