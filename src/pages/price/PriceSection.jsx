@@ -1,23 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { TrendingUp, User } from 'lucide-react';
 
-export default function ServicesSection() {
+export default function PriceSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isAnimating, setIsAnimating] = useState(false);
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const carouselImages = [
     "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1920&q=80",
     "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1920&q=80",
     "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1920&q=80",
     "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
-  ];
-
-  const targetAudience = [
-    "Entrepreneurs",
-    "Freelancers",
-    "Startups",
-    "Professionals"
   ];
 
   useEffect(() => {
@@ -32,23 +24,17 @@ export default function ServicesSection() {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    const textInterval = setInterval(() => {
-      setCurrentTextIndex((prev) => (prev + 1) % targetAudience.length);
-    }, 2000);
-
-    return () => clearInterval(textInterval);
-  }, []);
-
   return (
-    <>
+   <>
       {/* Carousel Background */}
-      <div className="absolute inset-0 z-0 h-230 overflow-hidden">
+    <div className="absolute inset-0 z-0 h-230 overflow-hidden">
         {carouselImages.map((img, index) => (
           <div
             key={index}
             className={`absolute inset-0 transition-all duration-5000 ease-in-out ${
-              index === currentSlide ? "opacity-100" : "opacity-0"
+              index === currentSlide
+                ? "opacity-100 "
+                : "opacity-0 "
             }`}
             style={{
               backgroundImage: `url(${img})`,
@@ -59,31 +45,17 @@ export default function ServicesSection() {
             }}
           />
         ))}
-        <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/70"></div>
+     <div className="absolute inset-0 bg-gradient-to-br from-black/70 via-black/60 to-black/70"></div>
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
+      <div className="relative  z-10 container mx-auto px-8 py-12 lg:py-20 mt-30">
+
+
         {/* Main Heading */}
-        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mt-15 text-center mb-16">
-          <span className="text-white ">
-            Co Working Space in <br /> Johar Town Lahore <br /> Designed for
-          </span>
-          <br />
-          <span className="text-[#F9BC07] inline-block min-h-20 relative">
-            {targetAudience.map((text, index) => (
-              <span
-                key={index}
-                className={`absolute left-1/2 transform -translate-x-1/2 transition-all duration-500 ${
-                  index === currentTextIndex
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 -translate-y-4"
-                }`}
-              >
-                {text}
-              </span>
-            ))}
-          </span>
+        <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-center mb-16">
+          <span className="text-white">Our</span>
+          <span className="text-[#F9BC07]"> Pricing</span>
         </h1>
 
         {/* Action Buttons */}
@@ -103,6 +75,7 @@ export default function ServicesSection() {
           </button>
         </div>
       </div>
-    </>
+
+</>
   );
 }

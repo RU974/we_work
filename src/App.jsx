@@ -18,6 +18,8 @@ import ServicesBanner from "./pages/services/ServicesBanner";
 import ContactUsSection from "./pages/contact/ContactUsSection";
 import ContactSection from "./pages/contact/contactSection";
 import LocationSection from "./pages/contact/LocationSection";
+import PriceSection from "./pages/price/PriceSection";
+import PricingList from "./pages/price/PricingList";
 import Footer from "./components/Footer";
 
 function App() {
@@ -73,12 +75,22 @@ function App() {
           </>
         } />
 
-        {/* Pricing Page */}
+        {/* contact Page */}
         <Route path="/contact" element={
           <>
           <ContactUsSection />
           <ContactSection/>
           <LocationSection/>
+          </>
+          } />
+
+
+        {/* Pricing Page */}
+        <Route path="/price" element={
+          <>
+          <PriceSection />
+          <PricingList/>
+
           </>
           } />
       </Routes>

@@ -51,11 +51,11 @@ export default function CoworkingFAQ() {
         {/* FAQ Accordion */}
         <div className="space-y-4">
           {faqs.map((faq, index) => (
-            <div key={index} className="border-2 border-yellow-400 overflow-hidden">
+            <div key={index} className="border-2 border-[#F9BC07] overflow-hidden">
               {/* Question Header */}
               <button
                 onClick={() => toggleAccordion(index)}
-                className="w-full bg-yellow-400 text-black px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between hover:bg-yellow-300 transition-colors"
+                className="w-full bg-[#F9BC07] text-black px-4 sm:px-6 py-4 sm:py-5 flex items-center justify-between hover:bg-yellow-300 transition-colors"
               >
                 <span className="text-left text-base sm:text-lg md:text-xl font-semibold pr-4">
                   {faq.question}
@@ -71,7 +71,7 @@ export default function CoworkingFAQ() {
 
               {/* Answer Content */}
               <div
-                className={`bg-black border-t-2 border-yellow-400 transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                className={`bg-black border-t-2 border-[#F9BC07] transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   } overflow-hidden`}
               >
                 <div className="px-4 sm:px-6 py-4 sm:py-6">

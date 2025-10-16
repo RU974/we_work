@@ -71,7 +71,7 @@ export default function Space99Landing() {
 
   const stats = [
     { number: 4, label: ["YEARS OF", "EXPERIENCE"] },
-    { number: 15, label: ["ROOMS"], suffix: "+" },
+    { number: 25, label: ["ROOMS"], suffix: "+" },
     { number: 24, label: ["SERVICE", "AVAILABLE"], suffix: "h" },
   ];
 
@@ -83,7 +83,7 @@ export default function Space99Landing() {
           <div className="flex flex-col justify-center space-y-8 lg:pr-8">
             <div>
               <p className="text-gray-400 text-sm mb-2 uppercase tracking-wider">Who we are</p>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-yellow-500 mb-6 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-[#F9BC07] mb-6 leading-tight">
                 Welcome to We Work
               </h1>
               <p className="text-gray-300 text-base md:text-lg leading-relaxed">
@@ -97,7 +97,7 @@ export default function Space99Landing() {
               <div className="space-y-3">
                 {amenities.slice(0, 4).map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-[#F9BC07] flex-shrink-0 mt-0.5" />
                     <span className="text-gray-300 text-sm md:text-base">{item.text}</span>
                   </div>
                 ))}
@@ -105,7 +105,7 @@ export default function Space99Landing() {
               <div className="space-y-3">
                 {amenities.slice(4, 8).map((item, idx) => (
                   <div key={idx} className="flex items-start gap-3">
-                    <Check className="w-5 h-5 text-yellow-500 flex-shrink-0 mt-0.5" />
+                    <Check className="w-5 h-5 text-[#F9BC07] flex-shrink-0 mt-0.5" />
                     <span className="text-gray-300 text-sm md:text-base">{item.text}</span>
                   </div>
                 ))}
@@ -115,7 +115,7 @@ export default function Space99Landing() {
             {/* Operational Days */}
             <div className="pt-4">
               <h3 className="text-xl md:text-2xl font-semibold">
-                Operational days : <span className="text-yellow-500">Mon – Sat</span>
+                Operational days : <span className="text-[#F9BC07]">Mon – Sat</span>
               </h3>
             </div>
           </div>

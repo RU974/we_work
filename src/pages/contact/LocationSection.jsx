@@ -9,9 +9,9 @@ export default function LocationSection() {
     "https://www.google.com/maps/place/Wework+Plaza+595,+H3,+Johar+Town,+Lahore,+Opposite+Emporium+Mall/";
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="bg-black text-white">
       {/* Header */}
-      <div className="bg-gradient-to-r from-yellow-500 to-yellow-400 py-8 px-4">
+      <div className="bg-gradient-to-r from-[#F9BC07] to-[#F9BC07] py-8 px-4">
         <h1 className="text-4xl md:text-6xl font-bold text-center text-black">
           OUR LOCATION
         </h1>
@@ -19,11 +19,11 @@ export default function LocationSection() {
 
       {/* Centered Map Section */}
       <div className="flex justify-center items-center py-12 px-4 ">
-        <div className="relative w-full md:w-4/5 lg:w-3/4 xl:w-2/3 h-[450px] rounded-2xl overflow-hidden border-4 border-yellow-500 shadow-2xl group">
+        <div className="relative w-full md:w-4/5 lg:w-3/4 xl:w-2/3 h-[450px] rounded-2xl overflow-hidden border-4 border-[#F9BC07] shadow-2xl group">
           {!isMapLoaded && (
             <div className="absolute inset-0 bg-gray-900 flex items-center justify-center z-10">
               <div className="text-center animate-pulse">
-                <MapPin className="w-16 h-16 text-yellow-400 mx-auto mb-4" />
+                <MapPin className="w-16 h-16 text-[#F9BC07] mx-auto mb-4" />
                 <p className="text-gray-400">Loading map...</p>
               </div>
             </div>
@@ -47,7 +47,7 @@ export default function LocationSection() {
             href={googleMapsUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="absolute bottom-4 right-4 bg-yellow-500 text-black font-bold py-2 px-4 rounded-full shadow-lg hover:bg-yellow-400 transition transform hover:scale-105 z-20"
+            className="absolute bottom-4 right-4 bg-[#F9BC07] text-black font-bold py-2 px-4 rounded-full shadow-lg hover:bg-[#F9BC07] transition transform hover:scale-105 z-20"
           >
             📍 View on Google Maps
           </a>

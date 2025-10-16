@@ -29,8 +29,8 @@ export default function ContactSection() {
       <div className="max-w-7xl mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Left Section - Get in Touch */}
-          <div className="bg-black border-2 border-yellow-400 rounded-lg overflow-hidden">
-            <div className="bg-yellow-400 p-6">
+          <div className="bg-black border-2 border-[#F9BC07] rounded-lg overflow-hidden">
+            <div className="bg-[#F9BC07] p-6">
               <h2 className="text-3xl sm:text-4xl font-bold text-black">Get in touch</h2>
               <div className="flex items-center gap-2 mt-2">
                 <Phone className="w-5 h-5 text-black" />
@@ -47,7 +47,7 @@ export default function ContactSection() {
 
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
-                  <div className="bg-yellow-400 p-2 rounded">
+                  <div className="bg-[#F9BC07] p-2 rounded">
                     <Phone className="w-6 h-6 text-black" />
                   </div>
                   <div>
@@ -56,7 +56,7 @@ export default function ContactSection() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-yellow-400 p-2 rounded">
+                  <div className="bg-[#F9BC07] p-2 rounded">
                     <Mail className="w-6 h-6 text-black" />
                   </div>
                   <div>
@@ -65,7 +65,7 @@ export default function ContactSection() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="bg-yellow-400 p-2 rounded">
+                  <div className="bg-[#F9BC07] p-2 rounded">
                     <MapPin className="w-6 h-6 text-black" />
                   </div>
                   <div>
@@ -81,35 +81,35 @@ export default function ContactSection() {
                         <div className="flex space-x-4 text-white">
                           <a
                             href="https://www.facebook.com/weworkcowork"
-                            className="w-10 h-10 rounded-full border-2 border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-all"
+                            className="w-10 h-10 rounded-full border-2 border-[#F9BC07] flex items-center justify-center hover:bg-[#F9BC07] hover:text-black transition-all"
                             aria-label="Facebook"
                           >
                             <Facebook className="w-5 h-5" />
                           </a>
                           <a
                             href="https://www.instagram.com/weworkcowork/?igsh=YnU0dng0ZWJ4dncz#"
-                            className="w-10 h-10 rounded-full border-2 border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-all"
+                            className="w-10 h-10 rounded-full border-2 border-[#F9BC07] flex items-center justify-center hover:bg-[#F9BC07] hover:text-black transition-all"
                             aria-label="Instagram"
                           >
                             <Instagram className="w-5 h-5" />
                           </a>
                                <a
                             href="https://www.youtube.com/@WeWork-CoWork"
-                            className="w-10 h-10 rounded-full border-2 border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-all"
+                            className="w-10 h-10 rounded-full border-2 border-[#F9BC07] flex items-center justify-center hover:bg-[#F9BC07] hover:text-black transition-all"
                             aria-label="Instagram"
                           >
                             <Youtube className="w-5 h-5" />
                           </a>
                           <a
                             href="https://api.whatsapp.com/send/?phone=923214448958&text&type=phone_number&app_absent=0"
-                            className="w-10 h-10 rounded-full border-2 border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-all"
+                            className="w-10 h-10 rounded-full border-2 border-[#F9BC07] flex items-center justify-center hover:bg-[#F9BC07] hover:text-black transition-all"
                             aria-label="Instagram"
                           >
                             <FaWhatsapp className="w-5 h-5" />
                           </a>
                            <a
                             href="mailto:inquiries@wework-cowork.com "
-                            className="w-10 h-10 rounded-full border-2 border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-all"
+                            className="w-10 h-10 rounded-full border-2 border-[#F9BC07] flex items-center justify-center hover:bg-[#F9BC07] hover:text-black transition-all"
                             aria-label="Instagram"
                           >
                             <Mail className="w-5 h-5" />
@@ -120,8 +120,8 @@ export default function ContactSection() {
           </div>
 
           {/* Right Section - Contact Form */}
-          <div className="bg-black border-2 border-yellow-400 rounded-lg overflow-hidden">
-            <div className="bg-yellow-400 p-6">
+          <div className="bg-black border-2 border-[#F9BC07] rounded-lg overflow-hidden">
+            <div className="bg-[#F9BC07] p-6">
               <h2 className="text-3xl sm:text-4xl font-bold text-black">Contact Us</h2>
               <p className="text-black mt-1">Feel free to contact with us.</p>
             </div>
@@ -138,7 +138,7 @@ export default function ContactSection() {
                     name="name"
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded focus:outline-none focus:border-yellow-400"
+                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded focus:outline-none focus:border-[#F9BC07]"
                   />
                 </div>
 
@@ -152,7 +152,7 @@ export default function ContactSection() {
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded focus:outline-none focus:border-yellow-400"
+                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded focus:outline-none focus:border-[#F9BC07]"
                   />
                 </div>
 
@@ -166,7 +166,7 @@ export default function ContactSection() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded focus:outline-none focus:border-yellow-400"
+                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded focus:outline-none focus:border-[#F9BC07]"
                   />
                 </div>
 
@@ -180,7 +180,7 @@ export default function ContactSection() {
                     name="subject"
                     value={formData.subject}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded focus:outline-none focus:border-yellow-400"
+                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded focus:outline-none focus:border-[#F9BC07]"
                   />
                 </div>
 
@@ -194,13 +194,13 @@ export default function ContactSection() {
                     value={formData.message}
                     onChange={handleChange}
                     rows="4"
-                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded focus:outline-none focus:border-yellow-400 resize-none"
+                    className="w-full px-4 py-3 bg-white border-2 border-gray-300 rounded focus:outline-none focus:border-[#F9BC07] resize-none"
                   />
                 </div>
 
                 <button
                   onClick={handleSubmit}
-                  className="bg-transparent border-2 border-yellow-400 text-yellow-400 px-8 py-3 rounded font-semibold hover:bg-yellow-400 hover:text-black transition-colors"
+                  className="bg-transparent border-2 border-[#F9BC07] text-[#F9BC07] px-8 py-3 rounded font-semibold hover:bg-[#F9BC07] hover:text-black transition-colors"
                 >
                   Submit
                 </button>

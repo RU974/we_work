@@ -94,7 +94,7 @@ export default function CoworkingServices() {
         <div className="grid lg:grid-cols-3 gap-12">
           {/* Left Column - Heading */}
           <div className="lg:col-span-1">
-            <p className="text-yellow-500 text-sm font-semibold mb-4 uppercase tracking-wider">
+            <p className="text-[#F9BC07] text-sm font-semibold mb-4 uppercase tracking-wider">
               Core Services
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight lg:sticky lg:top-8">
@@ -118,12 +118,12 @@ export default function CoworkingServices() {
                     transitionDelay: `${(index % 2) * 100}ms`
                   }}
                 >
-                  <div className={`text-yellow-500 transition-transform duration-500 ${
+                  <div className={`text-[#F9BC07] transition-transform duration-500 ${
                     visibleItems.includes(index) ? 'scale-100' : 'scale-75'
                   }`}>
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-yellow-500">
+                  <h3 className="text-xl font-bold text-[#F9BC07]">
                     {service.title}
                   </h3>
                   <p className="text-gray-300 text-sm leading-relaxed">

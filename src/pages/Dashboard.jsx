@@ -87,7 +87,7 @@ export default function Dashboard() {
        <div className="mb-6 text-gray-300">
   <p className="text-2xl font-roboto text-white font-bold ">
     Welcome to 
-    <span className="text-yellow-500"> We Work</span>
+    <span className="text-[#F9BC07]"> We Work</span>
   </p>
   <p className="text-xl mt-2 font-roboto text-white font-bold">
     Co Working Space Johar Town Lahore
@@ -96,7 +96,7 @@ export default function Dashboard() {
 
 
           <h1 className="text-5xl text-white md:text-7xl lg:text-8xl font-bold mb-10 leading-tight">
-            Your <span className="text-yellow-500">Gateway</span>
+            Your <span className="text-[#F9BC07]">Gateway</span>
             <br />
             to Productivity!
           </h1>
@@ -104,7 +104,7 @@ export default function Dashboard() {
           <div className="flex flex-wrap gap-4">
             <button 
               onClick={() => window.open("https://wa.me/923214448958", "_blank")}
-              className="flex items-center gap-2 border-2 border-yellow-400 text-yellow-500 px-8 py-3 rounded hover:bg-yellow-500 hover:text-black transition-all font-semibold"
+              className="flex items-center gap-2 border-2 border-[#F9BC07] text-[#F9BC07] px-8 py-3 rounded hover:bg-[#F9BC07] hover:text-black transition-all font-semibold"
             >
               <FaWhatsapp size={20} />
               WhatsApp Us
@@ -129,7 +129,7 @@ export default function Dashboard() {
               placeholder="Name"
               value={formData.name}
               onChange={handleInputChange}
-              className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#F9BC07]"
             />
             <input
               type="email"
@@ -137,7 +137,7 @@ export default function Dashboard() {
               placeholder="Email Address"
               value={formData.email}
               onChange={handleInputChange}
-              className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#F9BC07]"
             />
             <input
               type="tel"
@@ -145,7 +145,7 @@ export default function Dashboard() {
               placeholder="Contact Number"
               value={formData.contact}
               onChange={handleInputChange}
-              className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+              className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#F9BC07]"
             />
             <textarea
               name="message"
@@ -153,7 +153,7 @@ export default function Dashboard() {
               value={formData.message}
               onChange={handleInputChange}
               rows="4"
-              className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-yellow-400 resize-none"
+              className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#F9BC07] resize-none"
             />
             <button
               onClick={handleSubmit}
@@ -167,7 +167,7 @@ export default function Dashboard() {
 
       {/* Floating Buttons */}
       <div className="fixed bottom-8 left-8 z-20">
-        <button className="bg-yellow-500 text-black p-4 rounded-full shadow-2xl hover:scale-110 transition-transform">
+        <button className="bg-[#F9BC07] text-black p-4 rounded-full shadow-2xl hover:scale-110 transition-transform">
           <Phone size={24} />
         </button>
       </div>

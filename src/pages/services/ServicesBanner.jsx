@@ -7,36 +7,36 @@ export default function ServicesBanner() {
         {/* Main scrolling text */}
         <div className="overflow-hidden">
           <h1 className="animate-scroll-slow whitespace-nowrap text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tight">
-            <span className="inline-block px-4 text-yellow-400" style={{ 
-              WebkitTextStroke: '2px #facc15', 
+            <span className="inline-block px-4 text-[#F9BC07]" style={{ 
+              WebkitTextStroke: '2px #F9BC07', 
               WebkitTextFillColor: 'transparent',
               paintOrder: 'stroke fill' 
             }}>
               High Speed Internet_
             </span>
-            <span className="inline-block px-4 text-yellow-400" style={{ 
-              WebkitTextStroke: '2px #facc15', 
+            <span className="inline-block px-4 text-[#F9BC07]" style={{ 
+              WebkitTextStroke: '2px #F9BC07', 
               WebkitTextFillColor: 'transparent',
               paintOrder: 'stroke fill' 
             }}>
               Backups_
             </span>
-            <span className="inline-block px-4 text-yellow-400" style={{ 
-              WebkitTextStroke: '2px #facc15', 
+            <span className="inline-block px-4 text-[#F9BC07]" style={{ 
+              WebkitTextStroke: '2px #F9BC07', 
               WebkitTextFillColor: 'transparent',
               paintOrder: 'stroke fill' 
             }}>
               Parking_
             </span>
-            <span className="inline-block px-4 text-yellow-400" style={{ 
-              WebkitTextStroke: '2px #facc15', 
+            <span className="inline-block px-4 text-[#F9BC07]" style={{ 
+              WebkitTextStroke: '2px #F9BC07', 
               WebkitTextFillColor: 'transparent',
               paintOrder: 'stroke fill' 
             }}>
               24 Hours Access_
             </span>
-            <span className="inline-block px-4 text-yellow-400" style={{ 
-              WebkitTextStroke: '2px #facc15', 
+            <span className="inline-block px-4 text-[#F9BC07]" style={{ 
+              WebkitTextStroke: '2px #F9BC07', 
               WebkitTextFillColor: 'transparent',
               paintOrder: 'stroke fill' 
             }}>

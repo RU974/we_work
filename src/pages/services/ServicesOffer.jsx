@@ -60,7 +60,7 @@ export default function ServicesOffer() {
         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-16 md:mb-24">
               <div>
 
-            <h1 className="text-4xl text-yellow-500 md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
+            <h1 className="text-4xl text-[#F9BC07] md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
              We Offer You
            
             </h1>
@@ -89,7 +89,7 @@ export default function ServicesOffer() {
               >
                 {service.number}/
               </span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold group-hover:text-yellow-500 transition-colors duration-300 flex items-center">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold group-hover:text-[#F9BC07] transition-colors duration-300 flex items-center">
                 {service.title}
               </h2>
             </div>

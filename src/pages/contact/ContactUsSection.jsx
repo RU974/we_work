@@ -63,7 +63,7 @@ export default function ContactUsSection() {
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mt-15 text-center mb-16">
         
           <span className="text-white ">
-            Book Your WORKSPACE<br /> <span className='text-yellow-500'>NOW! </span> 
+            Book Your WORKSPACE<br /> <span className='text-[#F9BC07]'>NOW! </span> 
           </span>
           <br />
         </h1>

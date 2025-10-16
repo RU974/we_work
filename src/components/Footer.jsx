@@ -34,25 +34,25 @@ export default function Footer() {
 
           {/* Pages Section */}
           <div>
-            <h4 className="text-yellow-500 font-semibold text-lg mb-4">Pages</h4>
+            <h4 className="text-[#F9BC07] font-semibold text-lg mb-4">Pages</h4>
             <ul className="space-y-3">
               <li>
-                <a href="#home" className="text-gray-300 hover:text-yellow-500 transition-colors text-sm">
+                <a href="#home" className="text-gray-300 hover:text-[#F9BC07] transition-colors text-sm">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#about" className="text-gray-300 hover:text-yellow-500 transition-colors text-sm">
+                <a href="#about" className="text-gray-300 hover:text-[#F9BC07] transition-colors text-sm">
                   About
                 </a>
               </li>
               <li>
-                <a href="#services" className="text-gray-300 hover:text-yellow-500 transition-colors text-sm">
+                <a href="#services" className="text-gray-300 hover:text-[#F9BC07] transition-colors text-sm">
                   Services
                 </a>
               </li>
               <li>
-                <a href="#contact" className="text-gray-300 hover:text-yellow-500 transition-colors text-sm">
+                <a href="#contact" className="text-gray-300 hover:text-[#F9BC07] transition-colors text-sm">
                   Contact
                 </a>
               </li>
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* Subscribe Section */}
           <div>
-            <h4 className="text-yellow-500 font-semibold text-lg mb-4">Subscribe</h4>
+            <h4 className="text-[#F9BC07] font-semibold text-lg mb-4">Subscribe</h4>
             <p className="text-gray-300 text-sm mb-4 leading-relaxed">
               To get a free & amazing offers and other cool things stay with us.
               Please subscribe us.
@@ -70,10 +70,10 @@ export default function Footer() {
               <input
                 type="email"
                 placeholder="Your email"
-                className="px-4 py-2 bg-gray-900 border border-gray-700 rounded text-sm focus:outline-none focus:border-yellow-400 transition-colors"
+                className="px-4 py-2 bg-gray-900 border border-gray-700 rounded text-sm focus:outline-none focus:border-[#F9BC07] transition-colors"
               />
               <button
-                className="px-4 py-2 bg-yellow-400 text-black font-semibold rounded hover:bg-yellow-500 transition-colors text-sm"
+                className="px-4 py-2 bg-[#F9BC07] text-black font-semibold rounded hover:bg-[#F9BC07] transition-colors text-sm"
               >
                 Subscribe
               </button>
@@ -82,25 +82,25 @@ export default function Footer() {
 
           {/* Contact Information Section */}
           <div>
-            <h4 className="text-yellow-500 font-semibold text-lg mb-4">Contact Information</h4>
+            <h4 className="text-[#F9BC07] font-semibold text-lg mb-4">Contact Information</h4>
             <ul className="space-y-3">
               <li className="flex items-start space-x-3">
-                <Phone className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
+                <Phone className="w-4 h-4 text-[#F9BC07] mt-1 flex-shrink-0" />
                 <div className="text-sm">
 
-                  <a href="tel:+92 321 4448958" className="text-gray-300 hover:text-yellow-500 transition-colors block">
+                  <a href="tel:+92 321 4448958" className="text-gray-300 hover:text-[#F9BC07] transition-colors block">
                     +92 321 4448958
                   </a>
                 </div>
               </li>
               <li className="flex items-start space-x-3">
-                <Mail className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
-                <a href="inquiries@wework-cowork.com" className="text-gray-300 hover:text-yellow-500 transition-colors text-sm break-all">
+                <Mail className="w-4 h-4 text-[#F9BC07] mt-1 flex-shrink-0" />
+                <a href="inquiries@wework-cowork.com" className="text-gray-300 hover:text-[#F9BC07] transition-colors text-sm break-all">
                   inquiries@wework-cowork.com
                 </a>
               </li>
               <li className="flex items-start space-x-3">
-                <MapPin className="w-4 h-4 text-yellow-500 mt-1 flex-shrink-0" />
+                <MapPin className="w-4 h-4 text-[#F9BC07] mt-1 flex-shrink-0" />
                 <p className="text-gray-300 text-sm">
                   Wework Plaza 595,<br />
                   H3 Johar Town Lahore, <br />
@@ -124,35 +124,35 @@ export default function Footer() {
           <div className="flex space-x-4">
             <a
               href="https://www.facebook.com/weworkcowork"
-              className="w-10 h-10 rounded-full border-2 border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-all"
+              className="w-10 h-10 rounded-full border-2 border-[#F9BC07] flex items-center justify-center hover:bg-[#F9BC07] hover:text-black transition-all"
               aria-label="Facebook"
             >
               <Facebook className="w-5 h-5" />
             </a>
             <a
               href="https://www.instagram.com/weworkcowork/?igsh=YnU0dng0ZWJ4dncz#"
-              className="w-10 h-10 rounded-full border-2 border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-all"
+              className="w-10 h-10 rounded-full border-2 border-[#F9BC07] flex items-center justify-center hover:bg-[#F9BC07] hover:text-black transition-all"
               aria-label="Instagram"
             >
               <Instagram className="w-5 h-5" />
             </a>
                  <a
               href="https://www.youtube.com/@WeWork-CoWork"
-              className="w-10 h-10 rounded-full border-2 border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-all"
+              className="w-10 h-10 rounded-full border-2 border-[#F9BC07] flex items-center justify-center hover:bg-[#F9BC07] hover:text-black transition-all"
               aria-label="Instagram"
             >
               <Youtube className="w-5 h-5" />
             </a>
             <a
               href="https://api.whatsapp.com/send/?phone=923214448958&text&type=phone_number&app_absent=0"
-              className="w-10 h-10 rounded-full border-2 border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-all"
+              className="w-10 h-10 rounded-full border-2 border-[#F9BC07] flex items-center justify-center hover:bg-[#F9BC07] hover:text-black transition-all"
               aria-label="Instagram"
             >
               <FaWhatsapp className="w-5 h-5" />
             </a>
              <a
               href="mailto:inquiries@wework-cowork.com "
-              className="w-10 h-10 rounded-full border-2 border-yellow-400 flex items-center justify-center hover:bg-yellow-400 hover:text-black transition-all"
+              className="w-10 h-10 rounded-full border-2 border-[#F9BC07] flex items-center justify-center hover:bg-[#F9BC07] hover:text-black transition-all"
               aria-label="Instagram"
             >
               <Mail className="w-5 h-5" />

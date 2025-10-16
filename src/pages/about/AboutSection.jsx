@@ -57,21 +57,21 @@ export default function AboutSection() {
 
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-center mb-16">
-          <span className="text-yellow-500">ABOUT</span>
+          <span className="text-[#F9BC07]">ABOUT</span>
           <span className="text-white"> US</span>
         </h1>
 
         {/* Action Buttons */}
         <div className="flex flex-wrap gap-6 md:gap-12 justify-center mb-20 md:mb-32">
-          <button className="flex flex-col items-center gap-3 text-white hover:text-yellow-500 transition-colors group">
-            <div className="bg-white/10 p-4 rounded-lg group-hover:bg-yellow-400/20 transition-colors">
+          <button className="flex flex-col items-center gap-3 text-white hover:text-[#F9BC07] transition-colors group">
+            <div className="bg-white/10 p-4 rounded-lg group-hover:bg-[#F9BC07]/20 transition-colors">
               <TrendingUp size={40} className="stroke-2" />
             </div>
             <span className="text-base md:text-lg font-semibold">TALK TO SALES</span>
           </button>
 
-          <button className="flex flex-col items-center gap-3 text-white hover:text-yellow-500 transition-colors group">
-            <div className="bg-white/10 p-4 rounded-lg group-hover:bg-yellow-400/20 transition-colors">
+          <button className="flex flex-col items-center gap-3 text-white hover:text-[#F9BC07] transition-colors group">
+            <div className="bg-white/10 p-4 rounded-lg group-hover:bg-[#F9BC07]/20 transition-colors">
               <User size={40} className="stroke-2" />
             </div>
             <span className="text-base md:text-lg font-semibold">BOOK A TOUR</span>
@@ -80,7 +80,7 @@ export default function AboutSection() {
       </div>
 
       {/* Diagonal Yellow Bar with Scrolling Text */}
-      <div className="absolute top-[85%] left-0 w-full h-24 overflow-hidden bg-yellow-500  shadow-2xl z-10">
+      <div className="absolute top-[85%] left-0 w-full h-24 overflow-hidden bg-[#F9BC07]  shadow-2xl z-10">
         <div className="animate-scroll whitespace-nowrap flex items-center h-full">
           <span className="inline-block px-8 text-base md:text-lg lg:text-2xl font-extrabold text-black tracking-wider">
             LOCATED IN THE HEART OF JOHAR TOWN LOCATED IN THE HEART OF JOHAR TOWN LOCATED IN THE HEART OF JOHAR TOWN LOCATED IN THE HEART OF JOHAR TOWN LOCATED IN THE HEART OF JOHAR TOWN

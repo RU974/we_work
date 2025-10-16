@@ -15,7 +15,7 @@ export default function CoreServices() {
 
   const stats = [
     { number: 4, label: ["YEARS OF", "EXPERIENCE"] },
-    { number: 15, label: ["ROOMS"], suffix: "+" },
+    { number: 25, label: ["ROOMS"], suffix: "+" },
     { number: 24, label: ["SERVICE", "AVAILABLE"], suffix: "h" },
   ];
 
@@ -69,7 +69,7 @@ export default function CoreServices() {
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-16 md:mb-24">
           <div>
-            <p className="text-yellow-500 text-sm md:text-base mb-4 font-medium">
+            <p className="text-[#F9BC07] text-sm md:text-base mb-4 font-medium">
               Core Services
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight">
@@ -80,7 +80,7 @@ export default function CoreServices() {
               and easy
             </h1>
           </div>
-          <button className="mt-8 md:mt-0 border-2 border-dashed border-yellow-400 text-yellow-500 px-8 py-3 rounded-full hover:bg-yellow-400 hover:text-black transition-all duration-300 font-medium">
+          <button className="mt-8 md:mt-0 border-2 border-dashed border-[#F9BC07] text-[#F9BC07] px-8 py-3 rounded-full hover:bg-[#F9BC07] hover:text-black transition-all duration-300 font-medium">
             VIEW ALL SERVICES
           </button>
         </div>
@@ -106,7 +106,7 @@ export default function CoreServices() {
               >
                 {service.number}/
               </span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold group-hover:text-yellow-500 transition-colors duration-300 flex items-center">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold group-hover:text-[#F9BC07] transition-colors duration-300 flex items-center">
                 {service.title}
               </h2>
             </div>
