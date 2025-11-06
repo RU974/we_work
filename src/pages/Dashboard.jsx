@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Phone, User} from "lucide-react";
 import { FaWhatsapp } from "react-icons/fa";
-import img1 from "../assets/img1.jpg"
+import img1 from "../assets/img1.jpg";
+import img2 from "../assets/img2.jpg";
+import img3 from "../assets/img3.jpg";
+import img4 from "../assets/img4.jpg";
 
 export default function Dashboard() {
   const [formData, setFormData] = useState({
@@ -15,10 +18,10 @@ export default function Dashboard() {
   const [isAnimating, setIsAnimating] = useState(false);
 
   const carouselImages = [
-   img1 ,
-    "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1920&q=80",
-    "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1920&q=80",
-    "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1920&q=80"
+    img1,
+    img2,
+    img3,
+    img4,
   ];
 
 

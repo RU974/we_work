@@ -1,5 +1,8 @@
 import React from 'react';
 import { Clock } from 'lucide-react';
+import Meeting from "../assets/meeting1.jpg";
+import Private from "../assets/private.jpg";
+import Flexible from "../assets/flexible.jpg";
 
 export default function Services() {
   return (
@@ -36,7 +39,7 @@ export default function Services() {
           <div className="relative group overflow-hidden rounded-2xl border-4 border-[#F9BC07] md:transform md:-translate-y-8">
             <div className="aspect-[3/4] bg-gradient-to-br from-gray-800 to-gray-900">
               <img 
-                src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=800&fit=crop" 
+                src={Private} 
                 alt="Private Office"
                 className="w-full h-full object-cover"
               />
@@ -50,7 +53,7 @@ export default function Services() {
           <div className="relative group overflow-hidden rounded-2xl border-4 border-[#F9BC07] md:transform md:translate-y-8">
             <div className="aspect-[3/4] bg-gradient-to-br from-gray-700 to-gray-900">
               <img 
-                src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=600&h=800&fit=crop" 
+                src={Meeting} 
                 alt="Open Spaces"
                 className="w-full h-full object-cover"
               />
@@ -64,7 +67,7 @@ export default function Services() {
           <div className="relative group overflow-hidden rounded-2xl border-4 border-[#F9BC07] md:transform md:-translate-y-8">
             <div className="aspect-[3/4] bg-gradient-to-br from-gray-800 to-gray-900">
               <img 
-                src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=600&h=800&fit=crop" 
+                src={Flexible} 
                 alt="Shared Space"
                 className="w-full h-full object-cover"
               />

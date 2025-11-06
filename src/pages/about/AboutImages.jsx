@@ -1,6 +1,20 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Check } from 'lucide-react';
 import CountUp from 'react-countup';
+import Slide1 from "../../assets/slide1.jpg";
+import Slide2 from "../../assets/slide2.jpg";
+import Slide3 from "../../assets/slide3.jpg";
+import Slide4 from "../../assets/slide4.jpg";
+
+import Slide5 from "../../assets/slide5.jpg";
+import Slide6 from "../../assets/slide6.jpg";
+import Slide7 from "../../assets/slide7.jpg";
+import Slide8 from "../../assets/slide8.jpg";
+
+import Slide9 from "../../assets/slide9.jpg";
+import Slide10 from "../../assets/slide10.jpg";
+import Slide11 from "../../assets/slide11.jpg";
+import Slide12 from "../../assets/slide12.jpg";
 
 export default function Space99Landing() {
   const [offset, setOffset] = useState(0);
@@ -38,24 +52,24 @@ export default function Space99Landing() {
 
   // Image columns with placeholder images
   const column1Images = [
-    'https://images.unsplash.com/photo-1497366216548-37526070297c?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=400&h=300&fit=crop'
+    Slide1,
+   Slide2,
+    Slide3,
+    Slide4
   ];
 
   const column2Images = [
-    'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1551434678-e076c223a692?w=400&h=300&fit=crop'
+    Slide5,
+    Slide6,
+    Slide7,
+    Slide8
   ];
 
   const column3Images = [
-    'https://images.unsplash.com/photo-1497366672149-e5e4b4d34eb3?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=300&fit=crop'
+    Slide9,
+    Slide10,
+    Slide10,
+    Slide11
   ];
 
   const amenities = [

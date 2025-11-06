@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { TrendingUp, User } from 'lucide-react';
+import img1 from "../../assets/img1.jpg";
+import img2 from "../../assets/img2.jpg";
+import img3 from "../../assets/img3.jpg";
+import img4 from "../../assets/img4.jpg";
 
 export default function ServicesSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -7,10 +11,10 @@ export default function ServicesSection() {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const carouselImages = [
-    "https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=1920&q=80",
-    "https://images.unsplash.com/photo-1524758631624-e2822e304c36?w=1920&q=80",
-    "https://images.unsplash.com/photo-1497215728101-856f4ea42174?w=1920&q=80",
-    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80"
+   img1,
+    img2,
+    img3,
+    img4
   ];
 
   const targetAudience = [
