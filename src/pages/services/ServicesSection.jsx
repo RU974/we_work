@@ -47,7 +47,7 @@ export default function ServicesSection() {
   return (
     <>
       {/* Carousel Background */}
-      <div className="absolute inset-0 z-0 h-230 overflow-hidden">
+      <div className="absolute inset-0 z-0 h-255 overflow-hidden">
         {carouselImages.map((img, index) => (
           <div
             key={index}
@@ -67,7 +67,7 @@ export default function ServicesSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
+      <div className="relative  z-10 container mx-auto px-8 py-12 lg:py-20">
         {/* Main Heading */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mt-15 text-center mb-16">
           <span className="text-white ">

@@ -57,7 +57,7 @@ export default function Dashboard() {
   return (
     <>
       {/* Carousel Background */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+      <div className="absolute inset-0 z-0 h-200 overflow-hidden">
         {carouselImages.map((img, index) => (
           <div
             key={index}
@@ -83,7 +83,7 @@ export default function Dashboard() {
       </div>
 
    
-    <div className="relative z-10 container mx-auto px-8 py-12 lg:py-20">
+    <div className="relative  z-10 container mx-auto px-8 py-12 lg:py-20">
       <div className="flex flex-col lg:flex-row items-start justify-between gap-12">
         {/* Left Content */}
         <div className="flex-1 max-w-3xl pt-8">

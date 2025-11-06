@@ -20,7 +20,7 @@ export default function Navbar() {
 
         {/* Desktop Menu */}
         <div className="hidden lg:flex space-x-8 font-roboto text-white font-bold text-lg">
-          <Link to="/" className="hover:text-[#F9BC07] transition-colors duration-300">Home Page</Link>
+          <Link to="/" className="hover:text-[#F9BC07] transition-colors duration-300">Home</Link>
           <Link to="/about" className="hover:text-[#F9BC07] transition-colors duration-300">About Us</Link>
           <Link to="/services" className="hover:text-[#F9BC07] transition-colors duration-300">Services</Link>
           <Link to="/contact" className="hover:text-[#F9BC07] transition-colors duration-300">Contact Us</Link>
