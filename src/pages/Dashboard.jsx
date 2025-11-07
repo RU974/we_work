@@ -57,7 +57,7 @@ export default function Dashboard() {
   return (
     <>
       {/* Carousel Background */}
-      <div className="absolute inset-0 z-0 h-200 overflow-hidden">
+      <div className="absolute inset-0 z-0 h-195 overflow-hidden">
         {carouselImages.map((img, index) => (
           <div
             key={index}
