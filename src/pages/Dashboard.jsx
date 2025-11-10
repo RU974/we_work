@@ -45,14 +45,6 @@ export default function Dashboard() {
     });
   };
 
-  const handleSubmit = () => {
-    if (formData.name && formData.email && formData.contact) {
-      alert("Booking request submitted! We will contact you soon.");
-      setFormData({ name: "", email: "", contact: "", message: "" });
-    } else {
-      alert("Please fill in all required fields");
-    }
-  };
 
   return (
     <>
@@ -107,12 +99,14 @@ export default function Dashboard() {
           <div className="flex flex-wrap gap-4">
             <button 
               onClick={() => window.open("https://wa.me/923214448958", "_blank")}
-              className="flex items-center gap-2 border-2 border-[#F9BC07] text-[#F9BC07] px-8 py-3 rounded hover:bg-[#F9BC07] hover:text-black transition-all font-semibold"
+              className="flex items-center gap-2 border-2 border-[#F9BC07] text-[#F9BC07] px-8 py-3 rounded hover:bg-[#F9BC07] hover:text-black transition-all font-semibold cursor-pointer"
             >
               <FaWhatsapp size={20} />
               WhatsApp Us
             </button>
-            <button className="flex items-center gap-2 border-2 border-white text-white px-8 py-3 rounded hover:bg-white hover:text-black transition-all font-semibold">
+            <button
+            onClick={() => window.open("https://wa.me/923214448958", "_blank")}
+            className="flex items-center gap-2 border-2 border-white text-white px-8 py-3 rounded hover:bg-white hover:text-black transition-all font-semibold cursor-pointer">
               <User size={20} />
               Book A Tour
             </button>
@@ -159,8 +153,9 @@ export default function Dashboard() {
               className="w-full px-4 py-3 rounded-lg bg-white text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#F9BC07] resize-none"
             />
             <button
-              onClick={handleSubmit}
-              className="w-full bg-black text-white py-4 rounded-lg font-bold hover:bg-gray-900 transition-all"
+              onClick={() => window.open("https://wa.me/923214448958", "_blank")}
+            
+              className="w-full bg-black text-white py-4 rounded-lg font-bold hover:bg-yellow-600 cursor-pointer "
             >
               Book Now
             </button>
@@ -170,7 +165,9 @@ export default function Dashboard() {
 
       {/* Floating Buttons */}
       <div className="fixed bottom-8 left-8 z-20">
-        <button className="bg-[#F9BC07] text-black p-4 rounded-full shadow-2xl hover:scale-110 transition-transform">
+        <button 
+          onClick={() => window.open("https://wa.me/923214448958", "_blank")}
+        className="bg-[#F9BC07] text-black p-4 rounded-full shadow-2xl hover:scale-110 transition-transform cursor-pointer">
           <Phone size={24} />
         </button>
       </div>
@@ -178,7 +175,7 @@ export default function Dashboard() {
       <div className="fixed bottom-8 right-8 z-20">
         <button
           onClick={() => window.open("https://wa.me/923214448958", "_blank")}
-          className="bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform"
+          className="bg-green-500 text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform cursor-pointer"
         >
           <FaWhatsapp size={28} />
         </button>

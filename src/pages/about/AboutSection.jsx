@@ -4,6 +4,7 @@ import img1 from "../../assets/img1.jpg";
 import img2 from "../../assets/img2.jpg";
 import img3 from "../../assets/img3.jpg";
 import img4 from "../../assets/img4.jpg";
+import { Link } from "react-router-dom";
 
 export default function AboutSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -67,18 +68,23 @@ export default function AboutSection() {
 
         {/* Action Buttons */}
         <div className="flex flex-wrap gap-6 md:gap-12 justify-center mb-20 md:mb-32">
-          <button className="flex flex-col items-center gap-3 text-white hover:text-[#F9BC07] transition-colors group">
+           <Link to="/contact">
+          <button className="flex flex-col items-center gap-3 text-white hover:text-[#F9BC07] transition-colors group cursor-pointer">
             <div className="bg-white/10 p-4 rounded-lg group-hover:bg-[#F9BC07]/20 transition-colors">
               <TrendingUp size={40} className="stroke-2" />
             </div>
             <span className="text-base md:text-lg font-semibold">TALK TO SALES</span>
           </button>
-
+            </Link>
           <button className="flex flex-col items-center gap-3 text-white hover:text-[#F9BC07] transition-colors group">
-            <div className="bg-white/10 p-4 rounded-lg group-hover:bg-[#F9BC07]/20 transition-colors">
+            <div 
+                onClick={() => window.open("https://wa.me/923214448958", "_blank")}
+            className="bg-white/10 p-4 rounded-lg group-hover:bg-[#F9BC07]/20 transition-colors cursor-pointer">
               <User size={40} className="stroke-2" />
             </div>
-            <span className="text-base md:text-lg font-semibold">BOOK A TOUR</span>
+            <span 
+        
+            className="text-base md:text-lg font-semibold cursor-pointer">BOOK A TOUR</span>
           </button>
         </div>
       </div>

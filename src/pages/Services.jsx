@@ -3,7 +3,7 @@ import { Clock } from 'lucide-react';
 import Meeting from "../assets/meeting1.jpg";
 import Private from "../assets/private.jpg";
 import Flexible from "../assets/flexible.jpg";
-
+import { Link } from "react-router-dom";
 export default function Services() {
   return (
     <div className="min-h-screen bg-black text-white">
@@ -13,9 +13,11 @@ export default function Services() {
           <div className="bg-[#F9BC07] text-black px-4 md:px-6 py-2 md:py-3 rounded-full font-bold text-xs md:text-sm text-center">
             THE PERFECT PLACE TO WORK AND COLLABORATE
           </div>
-          <button className="border-2 border-[#F9BC07] text-[#F9BC07] px-4 md:px-6 py-2 rounded-full font-semibold hover:bg-[#F9BC07] hover:text-black transition-all duration-300 text-sm md:text-base">
+          <Link to="/services">
+          <button className="border-2 border-[#F9BC07] text-[#F9BC07] px-4 md:px-6 py-2 rounded-full font-semibold hover:bg-[#F9BC07] hover:text-black transition-all duration-300 text-sm md:text-base cursor-pointer">
             VIEW ALL SERVICES
           </button>
+          </Link>
         </div>
       </header>
 
